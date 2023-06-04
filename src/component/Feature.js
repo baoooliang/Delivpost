@@ -11,6 +11,7 @@ import features_img1 from "../assets/images/features-1.jpg";
 import dot_img from "../assets/images/dot-img.png";
 import features_img2 from "../assets/images/usps.jpeg";
 import features_img3 from "../assets/images/grow.jpg";
+import features_img4 from "../assets/images/automation.jpg";
 
 class Feature extends Component {
   render() {
@@ -70,22 +71,44 @@ class Feature extends Component {
             </Row>
             <Row className="align-items-center section mb-5">
               <Col md={5} className="order-2 order-md-1 mt-md-0 mt-5">
-                <h2 className="mb-4">值得信懒</h2>
+                <h2 className="mb-4">全自动化</h2>
                 <p className="text-muted mb-5">
-                  Delivpost深耕北美市场多年，已为上百个跨境电商提供高质量推广服务。专业追踪和分析宣传效果，帮助评估投资回报率和改进营销策略
+                  Delivpost与北美多个印刷工厂深度合作。能够实现自动，快速，大批量的明信片印刷
                 </p>
               </Col>
               <Col md={6} className="ms-md-auto order-1 order-md-2">
                 <div className="position-relative">
                   <div className="ms-5 features-img">
                     <img
-                      src={features_img3}
+                      src={features_img4}
                       alt=""
                       className="img-fluid d-block mx-auto rounded shadow"
                     />
                   </div>
                   <img src={dot_img} alt="" className="dot-img-left" />
                 </div>
+              </Col>
+            </Row>
+            <Row className="align-items-center section pb-0">
+              <Col md={6}>
+                <div className="position-relative mb-md-0 mb-5">
+                  <div className="me-5 features-img">
+                    <img
+                      src={features_img3}
+                      alt=""
+                      className="img-fluid d-block mx-auto rounded shadow"
+                    />
+                  </div>
+                  <img src={dot_img} alt="" className="dot-img-right" />
+                </div>
+              </Col>
+              <Col md={5} className="ms-md-auto">
+                <h2 className="mb-4">
+                  专业
+                </h2>
+                <p className="text-muted mb-5">
+                Delivpost深耕北美市场多年，已为上百个跨境电商提供高质量推广服务。专业追踪和分析宣传效果，帮助评估投资回报率和改进营销策略
+                </p>
               </Col>
             </Row>
           </Container>
@@ -100,12 +123,12 @@ class Feature extends Component {
               <Col lg={8}>
                 <div className="text-center">
                   <h1 className="text-white mb-4">
-                    开启全新推广模式
+                    享受市场最优惠价格<br/>$0.3/张
                   </h1>
                   <p className="text-white mb-5 font-size-16">
                   </p>
                   <Link to="#" className="btn btn-lg btn-light">
-                    启动明信片推广
+                  使用Delivpost
                   </Link>
                 </div>
               </Col>

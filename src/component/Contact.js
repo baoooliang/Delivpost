@@ -16,7 +16,7 @@ export default class Contact extends Component {
           <Container>
             <Row>
               <Col lg={6}>
-                <h2 className="fw-bold mb-4">Get in Touch</h2>
+                <h2 className="fw-bold mb-4">联系我们</h2>
                 <p className="text-muted mb-5">
                   Et harum quidem rerum facilis est expedita distinctio
                   temporecum soluta nobis est eligendi optio cumque nihil
@@ -34,14 +34,14 @@ export default class Contact extends Component {
                             htmlFor="name"
                             className="text-muted form-label"
                           >
-                            Name
+                            姓名
                           </Label>
                           <Input
                             name="name"
                             id="name"
                             type="text"
                             className="form-control"
-                            placeholder="Enter name*"
+                            placeholder=""
                           />
                         </div>
                       </Col>
@@ -51,14 +51,14 @@ export default class Contact extends Component {
                             htmlFor="email"
                             className="text-muted form-label"
                           >
-                            Email
+                            邮件
                           </Label>
                           <Input
                             name="email"
                             id="email"
                             type="email"
                             className="form-control"
-                            placeholder="Enter email*"
+                            placeholder=""
                           />
                         </div>
                       </Col>
@@ -68,14 +68,14 @@ export default class Contact extends Component {
                             htmlFor="subject"
                             className="text-muted form-label"
                           >
-                            Subject
+                            主题
                           </Label>
                           <Input
                             type="text"
                             className="form-control"
                             id="subject"
                             name="subject"
-                            placeholder="Enter Subject.."
+                            placeholder=""
                           />
                         </div>
 
@@ -84,14 +84,14 @@ export default class Contact extends Component {
                             htmlFor="comments"
                             className="text-muted form-label"
                           >
-                            Message
+                            内容
                           </Label>
                           <textarea
                             name="comments"
                             id="comments"
                             rows="4"
                             className="form-control"
-                            placeholder="Enter message..."
+                            placeholder=""
                           ></textarea>
                         </div>
                         <Link to="#">
@@ -101,7 +101,7 @@ export default class Contact extends Component {
 
                           className="btn btn-primary"
                         >
-                          Send Message
+                          发送
                         </button>
                         </Link>
                       </Col>

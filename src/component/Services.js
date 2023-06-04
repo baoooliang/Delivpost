@@ -23,7 +23,7 @@ export default class Services extends Component {
           <Container>
             <Row className="justify-content-center mb-5">
               <Col lg={7} className="text-center">
-                <h2 className="fw-bold">邮寄明信片服务</h2>
+                <h2 className="fw-bold">邮寄明信片</h2>
                 <p className="text-muted">
                 一种更适合北美市场的商业推广方式
                 </p>

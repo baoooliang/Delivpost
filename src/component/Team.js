@@ -46,7 +46,7 @@ export default class Team extends Component {
           <Container>
             <Row className="justify-content-center mb-4">
               <Col lg={7} className="text-center">
-                <h2 className="fw-bold">Our Team Members</h2>
+                <h2 className="fw-bold">团队成员</h2>
                 <p className="text-muted">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium totam rem ab illo inventore.
