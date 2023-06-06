@@ -13,104 +13,19 @@ export default class Contact extends Component {
     return (
       <React.Fragment>
         <section className="section" id="contact">
+          
           <Container>
-            <Row>
-              <Col lg={6}>
-                <h2 className="fw-bold mb-4">联系我们</h2>
-                <p className="text-muted mb-5">
-                  Et harum quidem rerum facilis est expedita distinctio
-                  temporecum soluta nobis est eligendi optio cumque nihil
-                  impedit quo minus maxime.
+          <Row className="justify-content-center mb-5">
+              <Col lg={7} className="text-center">
+                <h2 className="fw-bold">联系我们</h2>
+                <p className="text-muted">
+                发送邮件咨询更多关于Delivpost的信息。我们会在第一时间回复！
                 </p>
-
-                <div>
-                  <Form method="post" name="myForm">
-                    <p id="error-msg"></p>
-                    <div id="simple-msg"></div>
-                    <Row>
-                      <Col lg={6}>
-                        <div className="mb-4">
-                          <Label
-                            htmlFor="name"
-                            className="text-muted form-label"
-                          >
-                            姓名
-                          </Label>
-                          <Input
-                            name="name"
-                            id="name"
-                            type="text"
-                            className="form-control"
-                            placeholder=""
-                          />
-                        </div>
-                      </Col>
-                      <Col lg={6}>
-                        <div className="mb-4">
-                          <Label
-                            htmlFor="email"
-                            className="text-muted form-label"
-                          >
-                            邮件
-                          </Label>
-                          <Input
-                            name="email"
-                            id="email"
-                            type="email"
-                            className="form-control"
-                            placeholder=""
-                          />
-                        </div>
-                      </Col>
-                      <Col md={12}>
-                        <div className="mb-4">
-                          <Label
-                            htmlFor="subject"
-                            className="text-muted form-label"
-                          >
-                            主题
-                          </Label>
-                          <Input
-                            type="text"
-                            className="form-control"
-                            id="subject"
-                            name="subject"
-                            placeholder=""
-                          />
-                        </div>
-
-                        <div className="mb-4 pb-2">
-                          <Label
-                            htmlFor="comments"
-                            className="text-muted form-label"
-                          >
-                            内容
-                          </Label>
-                          <textarea
-                            name="comments"
-                            id="comments"
-                            rows="4"
-                            className="form-control"
-                            placeholder=""
-                          ></textarea>
-                        </div>
-                        <Link to="#">
-                        <button
-                          type="submit"
-                          name="send"
-
-                          className="btn btn-primary"
-                        >
-                          发送
-                        </button>
-                        </Link>
-                      </Col>
-                    </Row>
-                  </Form>
-                </div>
               </Col>
+            </Row>
+            <Row>
 
-              <Col lg={5} className="ms-lg-auto">
+              <Col lg={8} className="ms-lg-auto">
                 <div className="mt-5 mt-lg-0">
                   <img src={contact} alt="" className="img-fluid d-block" />
                   <p className="text-muted mt-5 mb-3">
@@ -120,16 +35,7 @@ export default class Contact extends Component {
                         className="me-2 text-muted icon icon-xs"
                       />
                     </i>{" "}
-                    Support@info.com
-                  </p>
-                  <p className="text-muted mb-3">
-                    <i>
-                      <FeatherIcon
-                        icon="phone"
-                        className="me-2 text-muted icon icon-xs"
-                      />
-                    </i>{" "}
-                    +91 123 4556 789
+                    admin@delivpost.com
                   </p>
                   <p className="text-muted mb-3">
                     <i>
@@ -140,38 +46,6 @@ export default class Contact extends Component {
                     </i>{" "}
                     2976 Edwards Street Rocky Mount, NC 27804
                   </p>
-                  <ul className="list-inline pt-4">
-                    <li className="list-inline-item me-3">
-                      <Link
-                        to="#"
-                        className="social-icon icon-mono avatar-xs rounded-circle"
-                      >
-                        <i>
-                          <FeatherIcon icon="facebook" className="icon-xs" />
-                        </i>{" "}
-                      </Link>
-                    </li>
-                    <li className="list-inline-item me-3">
-                      <Link
-                        to="#"
-                        className="social-icon icon-mono avatar-xs rounded-circle"
-                      >
-                        <i>
-                          <FeatherIcon icon="twitter" className="icon-xs" />
-                        </i>{" "}
-                      </Link>
-                    </li>
-                    <li className="list-inline-item">
-                      <Link
-                        to="#"
-                        className="social-icon icon-mono avatar-xs rounded-circle"
-                      >
-                        <i>
-                          <FeatherIcon icon="instagram" className="icon-xs" />
-                        </i>{" "}
-                      </Link>
-                    </li>
-                  </ul>
                 </div>
               </Col>
             </Row>

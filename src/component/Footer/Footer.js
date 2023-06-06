@@ -6,7 +6,7 @@ import FooterLink from "../Footer/Footer_link";
 // Footer Image
 import footer_image from "../../assets/images/footer-bg.png";
 
-import logolight from "../../assets/images/logo-light.png";
+import logolight from "../../assets/images/logo-dark-2.png";
 // Import Logo
 
 class Footer extends Component {
@@ -69,40 +69,17 @@ class Footer extends Component {
         >
           <Container>
             <Row>
-              <Col lg={4}>
+              <Col lg={12}>
                 <div className="mb-4">
                   <Link to="#">
-                    <img src={logolight} alt="" className="" height="30" />
+                    <img src={logolight} alt="" className="" height="80" width="200" />
                   </Link>
                   <p className="text-white-50 my-4">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum deleniti.
+                  自动化的邮寄商业明信片服务帮助您的产品在北美迅速提升知名度、增加销售量
                   </p>
                 </div>
               </Col>
-              <Col lg={7} className="ms-lg-auto">
-                <Row>
-                  {/* Render Footer Link */}
-                  {this.state.links.map((item, key) => (
-                    <Col lg={3} xs={6} key={key}>
-                      <div className="mt-4 mt-lg-0">
-                        <h4 className="text-white font-size-18 mb-3">
-                          {item.title}
-                        </h4>
-                        <ul className="list-unstyled footer-sub-menu">
-                          {item.child.map((linkItem, key) => (
-                            <li key={key}>
-                              <Link className="footer-link" to={linkItem.link}>
-                                {linkItem.title}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
-              </Col>
+              
             </Row>
             {/* Render Footer Link End */}
             <FooterLink />

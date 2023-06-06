@@ -28,6 +28,10 @@ class Section extends Component {
       borderRadius: '14px',
     };
 
+    const containerStyle = {
+      "padding-top": '30px'
+    };
+
     return (
       <>
         {/* Hero Start */}
@@ -37,16 +41,16 @@ class Section extends Component {
           style={{ background: `url(${Background})` }}
           id="home"
         >
-          <Container>
+          <Container style={containerStyle}>
             <Row className="align-items-center hero-content">
               <Col lg={5}>
                 <h1 className="text-white display-4 font-weight-semibold mb-4 hero-1-title">
-                助力您的北美电商业务
+                助力您的电商业务
                 </h1>
                 <p className="text-white-70 mb-4  mb-lg-5">
                 我们提供自动化的邮寄商业明信片服务帮助您的产品在北美迅速提升知名度、增加销售量
                 </p>
-                <Link to="#" className="btn btn-lg btn-light rounded-pill me-2">
+                <Link to="https://www.delivpost.com" className="btn btn-lg btn-light rounded-pill me-2">
                   立即注册
                 </Link>
               </Col>

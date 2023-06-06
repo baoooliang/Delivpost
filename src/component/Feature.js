@@ -127,7 +127,7 @@ class Feature extends Component {
                   </h1>
                   <p className="text-white mb-5 font-size-16">
                   </p>
-                  <Link to="#" className="btn btn-lg btn-light">
+                  <Link to="https://www.delivpost.com" className="btn btn-lg btn-light">
                   使用Delivpost
                   </Link>
                 </div>

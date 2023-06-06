@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 // Import Logo
 import logodark from "../../assets/images/logo-dark-2.png";
-import logolight from "../../assets/images/logo-light-2.png";
+import logolight from "../../assets/images/logo-dark-2.png";
 
 //import icon
 import FeatherIcon from "feather-icons-react";
@@ -86,7 +86,7 @@ class NavbarPage extends Component {
                     </NavItem>
                   ))}
                 </Nav>
-                <Link to="" className="btn btn-sm rounded-pill nav-btn ms-lg-3">
+                <Link to="https://www.delivpost.com" className="btn btn-sm rounded-pill nav-btn ms-lg-3">
                   立即注册
                 </Link>
               </ScrollspyNav>

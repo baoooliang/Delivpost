@@ -4,7 +4,7 @@ import { Card, CardBody, Col, Container, Row } from "reactstrap";
 
 //import images
 import user1 from "../assets/images/boy1.png";
-import user2 from "../assets/images/girl2.png";
+import user2 from "../assets/images/girl.png";
 import user3 from "../assets/images/boy2.png";
 import Background from "../assets/images/cta-bg.png";
 import demo from "../assets/images/demos.png";
@@ -63,7 +63,7 @@ export default class Blog extends Component {
                       </Link>
                     </h4>
                     <p className="text-muted">
-                      Delivpost的价格秒杀其他公司。已经用了他们的服务超过1年，我的商店规模直接翻了一倍。真的非常高效！赞！
+                      Delivpost的价格秒杀其他公司。已经用了他们的服务超过1年，我的商店规模直接翻了一倍。真的非常高效！赞！回复问题的速度也很快。
                     </p>
                     <div className="d-flex align-items-center mt-4 pt-2">
                       <img
@@ -74,7 +74,7 @@ export default class Blog extends Component {
                       <div className="flex-body">
                         <h5 className="font-size-17 mb-0">Amy</h5>
                         <p className="text-muted mb-0 font-size-14">
-                        运营亚马逊商店1年
+                        运营亚马逊商店2年
                         </p>
                       </div>
                     </div>
@@ -133,12 +133,10 @@ export default class Blog extends Component {
                             加入我们
                           </h2>
                           <p className="text-white-70 font-size-16 mb-4 pb-3">
-                            Far far away, behind the word mountains, far from
-                            the countries Vokalia and Consonantia, there live
-                            the blind texts.
+                            成为Delivpost社区一员， 让你的产品在同行激烈的竞争中脱引而出
                           </p>
                           <Link to="#" className="btn btn-light rounded-pill">
-                            Sign Up for free
+                            Let's go!
                           </Link>
                         </div>
                       </Col>
