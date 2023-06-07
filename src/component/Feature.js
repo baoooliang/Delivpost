@@ -11,7 +11,7 @@ import FeatherIcon from "feather-icons-react";
 import Background from "../assets/images/demos.png";
 import features_img1 from "../assets/images/features-1.jpg";
 import dot_img from "../assets/images/dot-img.png";
-import features_img2 from "../assets/images/usps2.jpeg";
+import features_img2 from "../assets/images/usps2.jpg";
 import features_img3 from "../assets/images/grow.jpg";
 import features_img4 from "../assets/images/automation.jpg";
 
