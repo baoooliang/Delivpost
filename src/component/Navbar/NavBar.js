@@ -9,6 +9,7 @@ import {
   Collapse,
 } from "reactstrap";
 import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 
 // Import Logo
 import logodark from "../../assets/images/logo-dark-2.png";
@@ -36,6 +37,11 @@ class NavbarPage extends Component {
     var targetId = this.props.navItems.map((item) => {
       return item.idnm;
     });
+
+  const onClick = () => {
+    window.location.href = 'https://www.delivpost.com';
+  }
+
     return (
       <React.Fragment>
         {/* Navbar Start */}
@@ -86,9 +92,9 @@ class NavbarPage extends Component {
                     </NavItem>
                   ))}
                 </Nav>
-                <Link to="https://www.delivpost.com" className="btn btn-sm rounded-pill nav-btn ms-lg-3">
+                <Button onClick={onClick} className="btn btn-sm rounded-pill nav-btn ms-lg-3">
                   立即注册
-                </Link>
+                </Button>
               </ScrollspyNav>
             </Collapse>
           </Container>

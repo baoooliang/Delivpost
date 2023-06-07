@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+
 import { Card, CardBody, Col, Container, Row } from "reactstrap";
 
 //import images
@@ -12,6 +14,9 @@ import demo from "../assets/images/demos.png";
 export default class Blog extends Component {
 
   render() {
+    const onClick = () => {
+      window.location.href = 'https://www.delivpost.com';
+    }
     return (
       <React.Fragment>
         <section className="section" id="blog">
@@ -135,9 +140,9 @@ export default class Blog extends Component {
                           <p className="text-white-70 font-size-16 mb-4 pb-3">
                             成为Delivpost社区一员， 让你的产品在同行激烈的竞争中脱引而出
                           </p>
-                          <Link to="#" className="btn btn-light rounded-pill">
+                          <Button onClick={onClick} className="btn btn-light rounded-pill">
                             Let's go!
-                          </Link>
+                          </Button>
                         </div>
                       </Col>
                     </Row>

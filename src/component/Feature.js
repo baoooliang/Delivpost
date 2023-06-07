@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+
 
 // Import FeatherIcon
 import FeatherIcon from "feather-icons-react";
@@ -9,12 +11,16 @@ import FeatherIcon from "feather-icons-react";
 import Background from "../assets/images/demos.png";
 import features_img1 from "../assets/images/features-1.jpg";
 import dot_img from "../assets/images/dot-img.png";
-import features_img2 from "../assets/images/usps.jpeg";
+import features_img2 from "../assets/images/usps2.jpeg";
 import features_img3 from "../assets/images/grow.jpg";
 import features_img4 from "../assets/images/automation.jpg";
 
 class Feature extends Component {
   render() {
+
+    const onClick = () => {
+      window.location.href = 'https://www.delivpost.com';
+    }
     return (
       <React.Fragment>
         <section className="section bg-light" id="features">
@@ -73,7 +79,7 @@ class Feature extends Component {
               <Col md={5} className="order-2 order-md-1 mt-md-0 mt-5">
                 <h2 className="mb-4">全自动化</h2>
                 <p className="text-muted mb-5">
-                  Delivpost与北美多个印刷工厂深度合作。能够实现自动，快速，大批量的明信片印刷
+                  Delivpost与北美多个印刷工厂深度合作。能够实现自动，快速，多规格，大批量的明信片印刷
                 </p>
               </Col>
               <Col md={6} className="ms-md-auto order-1 order-md-2">
@@ -123,13 +129,13 @@ class Feature extends Component {
               <Col lg={8}>
                 <div className="text-center">
                   <h1 className="text-white mb-4">
-                    享受市场最优惠价格<br/>$0.3/张
+                    享受市场最优惠价格<br/>$0.35/张 (印刷+邮寄)
                   </h1>
                   <p className="text-white mb-5 font-size-16">
                   </p>
-                  <Link to="https://www.delivpost.com" className="btn btn-lg btn-light">
-                  使用Delivpost
-                  </Link>
+                  <Button onClick={onClick} className="btn btn-lg btn-light">
+                  立即使用
+                  </Button>
                 </div>
               </Col>
             </Row>

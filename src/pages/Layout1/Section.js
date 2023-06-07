@@ -6,6 +6,8 @@ import { Container, Row, Col } from "reactstrap";
 import Background from "../../assets/images/hero-1-bg.png";
 import hero2 from "../../assets/images/hero-1-bottom-shape.png";
 import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+
 
 // Modal Video
 import ModalVideo from "react-modal-video";
@@ -32,6 +34,11 @@ class Section extends Component {
       "padding-top": '30px'
     };
 
+    const onClick = () => {
+      window.location.href = 'https://www.delivpost.com';
+    }
+  
+
     return (
       <>
         {/* Hero Start */}
@@ -50,9 +57,9 @@ class Section extends Component {
                 <p className="text-white-70 mb-4  mb-lg-5">
                 我们提供自动化的邮寄商业明信片服务帮助您的产品在北美迅速提升知名度、增加销售量
                 </p>
-                <Link to="https://www.delivpost.com" className="btn btn-lg btn-light rounded-pill me-2">
+                <Button onClick={onClick} className="btn btn-lg btn-light rounded-pill me-2">
                   立即注册
-                </Link>
+                </Button>
               </Col>
               <Col lg={6} sm={10} className="mx-auto ms-lg-auto me-lg-0">
                 <div className="mt-lg-0 mt-4">
