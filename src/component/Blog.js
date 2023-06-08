@@ -140,7 +140,7 @@ export default class Blog extends Component {
                             加入我们
                           </h2>
                           <p className="text-white-70 font-size-16 mb-6 pb-3">
-                            成为Delivpost社区一员,让你的产品在同行激烈的竞争中脱引而出<br/>扫下方二维码，加Delivpost官方微信账号
+                            成为Delivpost社区一员,让你的产品在同行激烈的竞争中脱引而出<br/>扫下方二维码，加Delivpost官方微信
                           </p>
                           <img
                             src={wechat}
