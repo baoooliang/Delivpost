@@ -129,7 +129,7 @@ class Feature extends Component {
               <Col lg={8}>
                 <div className="text-center">
                   <h1 className="text-white mb-4">
-                    享受市场最优惠价格<br/>$0.35/张 (印刷+邮寄)
+                    享受市场最优惠价格
                   </h1>
                   <p className="text-white mb-5 font-size-16">
                   </p>

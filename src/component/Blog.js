@@ -8,6 +8,7 @@ import { Card, CardBody, Col, Container, Row } from "reactstrap";
 import user1 from "../assets/images/boy1.png";
 import user2 from "../assets/images/girl.png";
 import user3 from "../assets/images/boy2.png";
+import wechat from  "../assets/images/wechat.png";
 import Background from "../assets/images/cta-bg.png";
 import demo from "../assets/images/demos.png";
 
@@ -17,6 +18,7 @@ export default class Blog extends Component {
     const onClick = () => {
       window.location.href = 'https://www.delivpost.com';
     }
+
     return (
       <React.Fragment>
         <section className="section" id="blog">
@@ -132,17 +134,19 @@ export default class Blog extends Component {
                   ></div>
                   <CardBody className="mx-auto p-sm-5 p-4">
                     <Row className="justify-content-center">
-                      <Col lg={10}>
+                      <Col lg={12}>
                         <div className="p-3">
                           <h2 className="text-white mb-4">
                             加入我们
                           </h2>
-                          <p className="text-white-70 font-size-16 mb-4 pb-3">
-                            成为Delivpost社区一员， 让你的产品在同行激烈的竞争中脱引而出
+                          <p className="text-white-70 font-size-16 mb-6 pb-3">
+                            成为Delivpost社区一员,让你的产品在同行激烈的竞争中脱引而出<br/>扫下方二维码，加Delivpost官方微信账号
                           </p>
-                          <Button onClick={onClick} className="btn btn-light rounded-pill">
-                            Let's go!
-                          </Button>
+                          <img
+                            src={wechat}
+                            style={{ width: '120px' }}
+                            alt="..."
+                          />
                         </div>
                       </Col>
                     </Row>

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 //import icon
 import FeatherIcon from "feather-icons-react";
 import { Col, Container, Form, Input, Label, Row } from "reactstrap";
+import wechat from  "../assets/images/wechat.png";
+import wechat_logo from  "../assets/images/wechat_logo.png";
 
 //import images
 import contact from "../assets/images/contact.png";
@@ -46,6 +48,7 @@ export default class Contact extends Component {
                     </i>{" "}
                     2976 Edwards Street Rocky Mount, NC 27804
                   </p>
+                
                 </div>
               </Col>
             </Row>
