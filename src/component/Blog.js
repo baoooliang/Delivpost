@@ -41,7 +41,7 @@ export default class Blog extends Component {
                       </Link>
                     </h4>
                     <p className="text-muted">
-                    非常感激Delivpost的专业和周到，强烈推荐这个网站给所有需要类似服务的电商。我在美国生活13年，对于美国客户，明信片绝对是非常有效的宣传方法。
+                    非常感激Delivpost的专业和周到，强烈推荐这个网站给所有需要类似服务的电商。我在美国生活13年，对于美国客户，邮寄是非常有效的宣传方法。
                     </p>
                     <div className="d-flex align-items-center mt-4 pt-2">
                       <img

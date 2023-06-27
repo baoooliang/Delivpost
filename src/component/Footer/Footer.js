@@ -75,7 +75,7 @@ class Footer extends Component {
                     <img src={logolight} alt="" className="" height="80" width="200" />
                   </Link>
                   <p className="text-white-50 my-4">
-                  自动化的邮寄商业明信片服务帮助您的产品在北美迅速提升知名度、增加销售量
+                  自动化的邮寄商业明信片和信件等服务帮助您的产品在北美迅速提升知名度、增加销售量
                   </p>
                 </div>
               </Col>

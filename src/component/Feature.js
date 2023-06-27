@@ -37,7 +37,7 @@ class Feature extends Component {
               <Col md={5} className="order-2 order-md-1 mt-md-0 mt-5">
                 <h2 className="mb-4">简单高效</h2>
                 <p className="text-muted mb-5">
-                  Delivpost提供简洁且易操作的软件平台。用户只需上传明信片设计，提交订单，即可启动北美明信片推广。
+                  Delivpost提供简洁且易操作的软件平台。用户只需上传明信片/信件的设计，提交订单，即可启动北美明信片推广。
                 </p>
               </Col>
               <Col md={6} className="ms-md-auto order-1 order-md-2">
@@ -71,7 +71,7 @@ class Feature extends Component {
                   安全可靠
                 </h2>
                 <p className="text-muted mb-5">
-                  Delivpost与美国最大的邮政服务提供商USPS(美国联邦邮政系统)合作。为客户提供定期，自动化，可靠的明信片邮寄服务。
+                  Delivpost与美国最大的邮政服务提供商USPS(美国联邦邮政系统)合作。为客户提供定期，自动化，可靠的邮寄服务。
                 </p>
               </Col>
             </Row>
@@ -79,7 +79,7 @@ class Feature extends Component {
               <Col md={5} className="order-2 order-md-1 mt-md-0 mt-5">
                 <h2 className="mb-4">全自动化</h2>
                 <p className="text-muted mb-5">
-                  Delivpost与北美多个印刷工厂深度合作。能够实现自动，快速，多规格，大批量的明信片印刷
+                  Delivpost与北美多个印刷工厂深度合作。能够实现自动，快速，多规格，大批量的明信片/信件印刷
                 </p>
               </Col>
               <Col md={6} className="ms-md-auto order-1 order-md-2">
