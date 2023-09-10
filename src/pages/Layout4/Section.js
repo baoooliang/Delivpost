@@ -77,7 +77,7 @@ class Section extends Component {
           <ModalVideo
             channel="custom"
             isOpen={this.state.isOpen}
-            url={currentURL + "/Delivpost.mp4"}
+            url={"/Delivpost.mp4"}
             onClose={() => this.setState({ isOpen: false })}
           />
         </section>
