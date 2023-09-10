@@ -32,12 +32,11 @@ class Feature extends Component {
                 </p>
               </Col>
             </Row>
-
             <Row className="align-items-center mb-5">
               <Col md={5} className="order-2 order-md-1 mt-md-0 mt-5">
                 <h2 className="mb-4">简单高效</h2>
                 <p className="text-muted mb-5">
-                  Delivpost提供简洁且易操作的软件平台。用户只需上传明信片/信件的设计，提交订单，即可启动北美明信片推广。
+                  Delivpost提供简洁且易操作的软件平台。不管是自动邮寄明信片、信件，群发电子邮件，还是AI内容生成，一切都可以在这个直观的界面上完成。无需复杂的技术技能，您可以轻松访问并控制您的所有工具
                 </p>
               </Col>
               <Col md={6} className="ms-md-auto order-1 order-md-2">
@@ -68,10 +67,10 @@ class Feature extends Component {
               </Col>
               <Col md={5} className="ms-md-auto">
                 <h2 className="mb-4">
-                  安全可靠
+                  市场最低价
                 </h2>
                 <p className="text-muted mb-5">
-                  Delivpost与美国最大的邮政服务提供商USPS(美国联邦邮政系统)合作。为客户提供定期，自动化，可靠的邮寄服务。
+                我们引以为傲的是, Delivpost提供最高品质的解决方案，同时确保您的成本保持在最低水平，帮助您实现出色的经济效益。无论您是初创电商还是大规模运营，我们都为您提供最具竞争力的价格
                 </p>
               </Col>
             </Row>
@@ -113,7 +112,7 @@ class Feature extends Component {
                   专业
                 </h2>
                 <p className="text-muted mb-5">
-                Delivpost深耕北美市场多年，已为上百个跨境电商提供高质量推广服务。专业追踪和分析宣传效果，帮助评估投资回报率和改进营销策略
+                Delivpost深耕北美市场多年，已为上百个跨境电商提供高质量推广服务。团队拥有多名亚马逊工程师，可专业追踪和分析宣传效果，帮助评估投资回报率和改进营销策略
                 </p>
               </Col>
             </Row>

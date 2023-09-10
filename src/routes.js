@@ -23,7 +23,7 @@ const routes = [
   { path: "/Layout7", component: Layout7 },
   { path: "/Layout8", component: Layout8 },
   { path: "/Layout9", component: Layout9 },
-  { path: "/", component: Layout1 },
+  { path: "/", component: Layout4 },
 ];
 
 export default routes;

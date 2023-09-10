@@ -10,6 +10,8 @@ import hero from "../../assets/images/hero-4-overlay.png";
 
 // Modal Video
 import ModalVideo from "react-modal-video";
+import Button from 'react-bootstrap/Button';
+
 import "../../../node_modules/react-modal-video/scss/modal-video.scss";
 
 class Section extends Component {
@@ -25,6 +27,11 @@ class Section extends Component {
   }
 
   render() {
+    const onClick = () => {
+      window.location.href = 'https://www.delivpost.com';
+    }
+    const currentURL = window.location.href;
+
     return (
       <React.Fragment>
         {/* <!-- Hero Start */}
@@ -42,23 +49,15 @@ class Section extends Component {
           <Container>
             <Row className="align-items-center">
               <Col lg={5}>
-                <span className="badge badge-soft-primary mb-4">
-                  Creative Design
-                </span>
                 <h1 className="font-weight-semibold mb-4 hero-4-title">
-                  We Help Startups Launch Their Products
+                助力您的电商业务
                 </h1>
                 <p className="mb-5 text-muted">
-                  Nemo enim ipsam voluptatem quia voluptas sit aut aspernatur
-                  aut fugit sed quia consequuntur magni dolores ratione
-                  voluptatem nesciunt.
+                明信片/信件邮寄, 电子邮件群发，AI内容生成等服务，帮助您的产品在北美迅速提升知名度、增加好评率、扩大销售量
                 </p>
-                <Link to="#" className="btn btn-lg btn-primary me-2">
-                  Get Started
-                </Link>{" "}
-                <Link to="#" className="btn btn-lg btn-soft-primary me-2">
-                  Try for free
-                </Link>
+                <Button onClick={onClick} className="btn btn-lg btn-primary me-2">
+                  立即注册
+                </Button>
               </Col>
               <Col lg={4} className="ms-lg-auto text-center mt-lg-0 mt-5">
                 <div className="d-inline-block">
@@ -76,9 +75,9 @@ class Section extends Component {
             </Row>
           </Container>
           <ModalVideo
-            channel="vimeo"
+            channel="custom"
             isOpen={this.state.isOpen}
-            videoId="12022651"
+            url={currentURL + "/Delivpost.mp4"}
             onClose={() => this.setState({ isOpen: false })}
           />
         </section>

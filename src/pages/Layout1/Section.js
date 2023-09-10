@@ -55,7 +55,7 @@ class Section extends Component {
                 助力您的电商业务
                 </h1>
                 <p className="text-white-70 mb-4  mb-lg-5">
-                我们提供自动化的邮寄商业明信片和信件等服务帮助您的产品在北美迅速提升知名度、增加好评率、扩大销售量
+                我们提供自动化邮寄明信片/信件, 电子邮件群发，AI内容生成等服务，帮助您的产品在北美迅速提升知名度、增加好评率、扩大销售量
                 </p>
                 <Button onClick={onClick} className="btn btn-lg btn-light rounded-pill me-2">
                   立即注册

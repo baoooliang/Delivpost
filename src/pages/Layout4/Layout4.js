@@ -1,6 +1,13 @@
 import React, { Component, Suspense } from "react";
 
+// import Team from "../../component/Team";
+// import Blog from "../../component/Blog";
+// import Contact from "../../component/Contact";
+// import Footer from "../../component/Footer/Footer";
+
+// Importing Section
 const Navbar = React.lazy(() => import("../../component/Navbar/NavBar"));
+
 const Section = React.lazy(() => import("./Section"));
 const Services = React.lazy(() => import("../../component/Services"));
 const Feature = React.lazy(() => import("../../component/Feature"));
@@ -9,37 +16,23 @@ const Team = React.lazy(() => import("../../component/Team"));
 const Blog = React.lazy(() => import("../../component/Blog"));
 const Contact = React.lazy(() => import("../../component/Contact"));
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
-class Layout4 extends Component {
-  // Loader
-  Loader = () => {
-    return (
-      <div id="preloader">
-        <div id="status">
-          <div className="spinner">
-            <div className="bounce1"></div>
-            <div className="bounce2"></div>
-            <div className="bounce3"></div>
-          </div>
-        </div>
-      </div>
-    );
-  };
 
+// import { Spinner } from "reactstrap";
+
+class Layout_1 extends Component {
   constructor(props) {
     super(props);
     this.state = {
       navItems: [
-        { id: 1, idnm: "home", navheading: "Home" },
-        { id: 2, idnm: "services", navheading: "Services" },
-        { id: 3, idnm: "features", navheading: "Features" },
-        { id: 4, idnm: "pricing", navheading: "Pricing" },
-        { id: 5, idnm: "team", navheading: "Team" },
-        { id: 6, idnm: "blog", navheading: "Blog" },
-        { id: 7, idnm: "contact", navheading: "Contact Us" },
+        { id: 1, idnm: "home", navheading: "首页" },
+        { id: 2, idnm: "services", navheading: "简介" },
+        { id: 3, idnm: "features", navheading: "服务" },
+        { id: 5, idnm: "team", navheading: "团队" },
+        { id: 7, idnm: "contact", navheading: "联系我们" },
       ],
       pos: document.documentElement.scrollTop,
-      imglight: false,
-      navClass: "navbar-light bg-white",
+      imglight: true,
+      navClass: "",
     };
   }
 
@@ -56,14 +49,29 @@ class Layout4 extends Component {
     if (scrollup > this.state.pos) {
       this.setState({ navClass: "nav-sticky", imglight: false });
     } else {
-      this.setState({ navClass: "navbar-light bg-white", imglight: false });
+      this.setState({ navClass: "", imglight: true });
     }
+  };
+
+  //set preloader div
+  PreLoader = () => {
+    return (
+      <div id="preloader">
+        <div id="status">
+          <div className="spinner">
+            <div className="bounce1"></div>
+            <div className="bounce2"></div>
+            <div className="bounce3"></div>
+          </div>
+        </div>
+      </div>
+    );
   };
 
   render() {
     return (
       <React.Fragment>
-        <Suspense fallback={this.Loader()}>
+        <Suspense fallback={this.PreLoader()}>
           {/* Importing Navbar */}
           <Navbar
             navItems={this.state.navItems}
@@ -99,5 +107,4 @@ class Layout4 extends Component {
     );
   }
 }
-
-export default Layout4;
+export default Layout_1;
