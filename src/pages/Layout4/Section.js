@@ -75,9 +75,9 @@ class Section extends Component {
             </Row>
           </Container>
           <ModalVideo
-            channel="custom"
+            channel="youku"
             isOpen={this.state.isOpen}
-            url={"/Delivpost.mp4"}
+            videoId="XNjAyNTEyNjA2MA"
             onClose={() => this.setState({ isOpen: false })}
           />
         </section>
