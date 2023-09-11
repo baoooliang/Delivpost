@@ -77,7 +77,7 @@ class Section extends Component {
           <ModalVideo
             channel="youku"
             isOpen={this.state.isOpen}
-            videoId="XNjAyNTEyNjA2MA"
+            videoId="XNjAyNTM0MjM1Ng"
             onClose={() => this.setState({ isOpen: false })}
           />
         </section>
